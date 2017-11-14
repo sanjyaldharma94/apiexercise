@@ -1,0 +1,19 @@
+/* universal slector*/
+*{
+	font-family: 'Noto Serif', serif;
+padding: 0;
+margin:0;
+outline: none;
+}
+form {
+	text-align: center;
+	margin: 50px;
+}
+button{
+	margin-top: 25px;
+}
+#display  div,img{
+	margin-top: 15px;
+	text-align: center;
+	display: inline-block;
+}
