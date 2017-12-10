@@ -28,15 +28,19 @@ $.ajax({
 			var titleDiv = document.createElement('div')
 			//give child its information
 			var titleText = document.createTextNode(bookArray[i].volumeInfo.title)
+			//creating an getElementById
+			var label = document.createElement('p');
 			//create an image
 			var image = document.createElement('img')
 			image.setAttribute("src", bookArray[i].volumeInfo.imageLinks.thumbnail);
-			
 
-            //send the created text to the div
-			titleDiv.appendChild(titleText);
 			//sending the image to the div
-			display.appendChild(image);
+			titleDiv.appendChild(image);
+
+      //send the created text to the div
+			label.appendChild(titleText);
+			titleDiv.appendChild(label);
+
 			//display in the webpage
 			display.appendChild(titleDiv);
 
@@ -44,10 +48,8 @@ $.ajax({
              console.log(bookArray[i].volumeInfo);
            //  document.write(bookArray[i].volumeInfo.title)
 		}
-	
+
 	}
 })
 }
 document.getElementById('runSearch').addEventListener('click', bookFinder, false);
-
-//GOOGLE MAP API REQUEST

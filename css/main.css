@@ -12,8 +12,11 @@ form {
 button{
 	margin-top: 25px;
 }
-#display  div,img{
-	margin-top: 15px;
-	text-align: center;
+#display  div{
+	margin: 15px 0 0 25px;
+	width: 30%;
 	display: inline-block;
+}
+titleDiv titleText{
+	display: block;
 }
